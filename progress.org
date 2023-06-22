@@ -1,0 +1,11 @@
+* TODO first steps [50%]
+   - [X] create project
+   - [X] add license
+   - [-] add initial data model
+     - [X] mermaid diagram
+     - [ ] application models
+   - [ ] build out a few next steps
+   - [ ] commit to Github
+* TODO next steps
+* snippets
+** license for file header
