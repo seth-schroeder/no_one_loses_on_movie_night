@@ -1,11 +1,53 @@
-* TODO first steps [50%]
+* TODO first push [/]
+** TODO separate projects
+*** DONE ruby project
+CLOSED: [2023-07-04 Tue 10:51]
+*** TODO elixir project
+     - graphql
+     - [X] graphql or liveview?
+       - I have graphql experience with Absinthe
+       - Better to learn the Ruby tools
+       - Liveview is interesting and still lets me get back into Ecto
+       - [X] purchase https://online.pragmaticstudio.com/courses/liveview-2ed-pro/
+         - extremely helpful:
+           https://online.pragmaticstudio.com/courses/liveview-2ed-pro/steps/28
+       - yikes, the bespoke code in the training course for liveview was a whole lot
+       - pivoting back to graphql
+* TODO first steps [62%]
    - [X] create project
    - [X] add license
    - [-] add initial data model
      - [X] mermaid diagram
      - [ ] application models
+   - [X] ugh ~snap~ and ~bundler~ are not playing well
+     - [X] ~ruby-installer~
+     - [X] ~chruby~
+   - [X] look into graphQL
+     - going with graphql-ruby
+     - ruby toolbox:
+       https://www.ruby-toolbox.com/search?q=graphql
+     - [X] options
+       - [X] https://graphql-ruby.org/
+         - has rubocop support -- https://www.ruby-toolbox.com/projects/rubocop-graphql
+       - [X] https://rails-graphql.dev/
+         - love the documentation
+         - not really released after 3 years?
+         - no rubocop
+       - [X] https://www.ruby-toolbox.com/projects/rack-graphql
+         - too low level
+   - [X] bring in rspec
+     - [X] consider system testing
+       - [X] seems old school, I don't want erb or rest
+       - [X] graphQL options?
+         https://graphql-ruby.org/testing/integration_tests#testing-interface-level-behaviors
    - [ ] build out a few next steps
    - [ ] commit to Github
 * TODO next steps
 * snippets
 ** license for file header
+* thoughts for later
+** graphql
+   - schemas
+     - tracking changes
+       https://rmosolgo.github.io/ruby/graphql/2017/03/16/tracking-schema-changes-with-graphql-ruby
+     - check for breaking changes automatically

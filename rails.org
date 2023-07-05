@@ -1,0 +1,22 @@
+* catchup [100%]
+   - [X] latest version?
+     ~7.0.5~
+   - [ ] what was added in...
+     - [ ] [[https://rubyonrails.org/2021/12/15/Rails-7-fulfilling-a-vision][7]] (end of 2021)
+       + much better integration with front end tooling
+       + ActiveRecord
+         * encrypted attributes
+         * async / parallel query loading
+         * querylogs ([[https://github.com/basecamp/marginalia][marginalia]])
+     - [ ] 6
+     - [ ] 5
+   - [ ] what to look into?
+     - [ ] Concerns
+       - https://blog.appsignal.com/2020/09/16/rails-concers-to-concern-or-not-to-concern.html
+     - [ ] ApplicationRecord
+* tips
+   - run ~bin/dev~ to start a rails server and yarn [[[https://github.com/rails/cssbundling-rails][source]]]
+* questions
+   - [ ] railties
+   - [ ] engines
+   - [ ] 
