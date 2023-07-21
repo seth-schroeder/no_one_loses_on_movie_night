@@ -1,14 +1,14 @@
-* catchup [100%]
+* catchup [33%]
    - [X] latest version?
      ~7.0.5~
-   - [ ] what was added in...
+   - [-] what was added in...
      - [ ] [[https://rubyonrails.org/2021/12/15/Rails-7-fulfilling-a-vision][7]] (end of 2021)
-       + much better integration with front end tooling
+       + much better integration with front end tooling 
        + ActiveRecord
          * encrypted attributes
          * async / parallel query loading
          * querylogs ([[https://github.com/basecamp/marginalia][marginalia]])
-     - [ ] 6
+     - [X] 6
      - [ ] 5
    - [ ] what to look into?
      - [ ] Concerns
@@ -19,4 +19,28 @@
 * questions
    - [ ] railties
    - [ ] engines
-   - [ ] 
+* plan
+** DONE diagram for data model
+CLOSED: [2023-07-05 Wed 18:34]
+** DONE migrations for models without foreign keys
+CLOSED: [2023-07-05 Wed 18:45]
+*** DONE ~people~
+CLOSED: [2023-07-05 Wed 18:40]
+*** DONE ~movie~
+CLOSED: [2023-07-05 Wed 18:41]
+*** DONE ~room~
+CLOSED: [2023-07-05 Wed 18:44]
+
+** TODO migrations for models with foreign keys
+*** TODO non-join tables
+**** DONE showing
+CLOSED: [2023-07-05 Wed 18:49]
+**** TODO seat
+      - I think this needs to connect to showing. 
+*** TODO join tables
+* diversions
+  |   | day        |  time | what                 |
+  |---+------------+-------+----------------------|
+  |   | 2023/07/05 | 18:39 | set rspec as default |
+  |   |            | 18:48 | response from Munya  |
+  |   |            |       |                      |

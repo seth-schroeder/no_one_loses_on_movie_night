@@ -17,24 +17,22 @@ These are [mermaid](https://mermaid.js.org/) entity relationship diagrams for th
 ```mermaid
 erDiagram
 
-Room { }
-Movie { }
-Person { }
+Movie { name string }
+Person { name string }
+Group { name string }
 
-Seat { }
-Showing { }
+PersonGroup {}
+Showing { when time }
 ShowingOption { }
-Vote { }
+Vote {  value integer }
 
-Seat }o--|| Person : who
-Seat }o--|| Room : where
+Person }|--o{ PersonGroup : " "
+Group }|--o{ PersonGroup : " "
 Showing }o--|| Movie : what
-Showing }o--|| Room : where
-ShowingOption }o--|| Movie : has
-ShowingOption }o--|| Showing : has
+Showing }o--|| Group : for
+ShowingOption }o--|| Movie : " "
+ShowingOption }o--|| Showing : " "
 Vote }o--|| ShowingOption : for
-Vote }o--|| Person : from
-
+Vote }o--|| Person : provides
 ```
-
 

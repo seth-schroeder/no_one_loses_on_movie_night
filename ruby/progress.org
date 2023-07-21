@@ -1,0 +1,22 @@
+* goals
+** TODO [2023-07-21 Fri] [1/3]
+    - [ ] install and configure rubocop & rubocop-graphql
+*** DONE create models [7/7]
+CLOSED: [2023-07-21 Fri 13:29]
+     - [X] Movie { }
+     - [X] Person { }
+     - [X] Room { }
+     - [X] Seat { }
+     - [X] Showing { }
+     - [X] ShowingOption { }
+     - [X] Vote { }
+*** TODO cleanup [50%]
+     - [ ] remove Seat?
+     - [X] default to RSpec
+     - [X] rubocop for rspec
+       - rubocop-rake
+       - rubocop-rails
+       - rubocop-graphql
+     - [ ] remove capybara
+     - [ ] *consider* ~rails generate rspec:model user~
+*** TODO start graphql API
