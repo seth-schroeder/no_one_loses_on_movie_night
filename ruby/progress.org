@@ -22,6 +22,8 @@ CLOSED: [2023-07-24 Mon 17:55]
      - [X] remove capybara
      - [X] *consider* ~rails generate rspec:model user~
 ** TODO [2023-07-24 Mon] [0/1]
+*** TODO distractions
+     - [ ] why is LSP using the wrong directory, very distracting
 *** TODO start graphql API
      - [X] gem documentation: https://graphql-ruby.org/
      

@@ -6,6 +6,7 @@ class GraphqlController < ApplicationController
   # but you'll have to authenticate your user separately
   # protect_from_forgery with: :null_session
 
+  # rubocop:disable Metrics/MethodLength
   def execute
     variables = prepare_variables(params[:variables])
     query = params[:query]
@@ -22,10 +23,12 @@ class GraphqlController < ApplicationController
 
     handle_error_in_development(e)
   end
+  # rubocop:enable Metrics/MethodLength
 
   private
 
   # Handle variables in form data, JSON body, or a blank value
+  # rubocop:disable Metrics/MethodLength
   def prepare_variables(variables_param)
     case variables_param
     when String
@@ -44,10 +47,11 @@ class GraphqlController < ApplicationController
       raise ArgumentError, "Unexpected parameter: #{variables_param}"
     end
   end
+  # rubocop:enable Metrics/MethodLength
 
-  def handle_error_in_development(e)
-    logger.error e.message
-    logger.error e.backtrace.join("\n")
+  def handle_error_in_development(err)
+    logger.error err.message
+    logger.error err.backtrace.join("\n")
 
     render json: { errors: [{ message: e.message, backtrace: e.backtrace }], data: {} }, status: :internal_server_error
   end
