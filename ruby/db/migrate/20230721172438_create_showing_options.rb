@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateShowingOptions < ActiveRecord::Migration[7.0]
   def change
     create_table :showing_options do |t|
