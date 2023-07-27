@@ -21,9 +21,31 @@ CLOSED: [2023-07-24 Mon 17:55]
        - rubocop-graphql
      - [X] remove capybara
      - [X] *consider* ~rails generate rspec:model user~
-** TODO [2023-07-24 Mon] [0/1]
-*** TODO distractions
-     - [ ] why is LSP using the wrong directory, very distracting
+** TODO [2023-07-24 Mon] [1/2]
+*** DONE distractions
+CLOSED: [2023-07-27 Thu 09:51]
+     - [X] why is LSP using the wrong directory, very distracting
+       - still needs help finding Rails / Gemfile
 *** TODO start graphql API
      - [X] gem documentation: https://graphql-ruby.org/
-     
+** TODO [2023-07-27 Thu] [/]
+    - see https://graphql-ruby.org/schema/definition
+*** TODO publish a mutation to add a movie
+*** TODO questions [100%]
+     - [X] does any generated code contain ~GraphQL::Schema~
+       - [[file:app/graphql/no_one_loses_on_movie_night_schema.rb::class NoOneLosesOnMovieNightSchema < GraphQL::Schema]]
+     - [X] what is ~Types::MutationType~
+       - [[file:app/graphql/types/mutation_type.rb::class MutationType < Types::BaseObject]]
+     - [X] what is ~Types::QueryType~
+       - [[file:app/graphql/types/query_type.rb::class QueryType < Types::BaseObject]]
+     - [ ] how do I test a mutation?
+       
+*** TODO distractions [100%]
+**** DONE solargraph
+CLOSED: [2023-07-27 Thu 10:28]
+      - [X] install
+        https://solargraph.org/
+      - [X] configure
+        - [X] run ~bundle exec solargraph config~
+        - [X] add rails plugin
+      -  working great!
