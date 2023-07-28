@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class NoOneLosesOnMovieNightSchema < GraphQL::Schema
+  max_depth(32)
+  max_complexity(256)
+
   mutation(Types::MutationType)
   query(Types::QueryType)
 
@@ -10,10 +13,15 @@ class NoOneLosesOnMovieNightSchema < GraphQL::Schema
   # GraphQL-Ruby calls this when something goes wrong while running a query:
 
   # Union and Interface Resolution
-  def self.resolve_type(_abstract_type, _obj, _ctx)
-    # TODO: Implement this method
-    # to return the correct GraphQL object type for `obj`
-    raise(GraphQL::RequiredImplementationMissingError)
+  def self.resolve_type(_abstract_type, obj, _ctx)
+    # TODO: wow a case statement won't scale
+    case obj
+    when Movie
+      Types::MovieType
+    else
+      Rails.logger.error("unable to resolve #{obj}")
+      raise(GraphQL::RequiredImplementationMissingError)
+    end
   end
 
   # Stop validating when it encounters this many errors:

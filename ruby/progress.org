@@ -28,8 +28,11 @@ CLOSED: [2023-07-27 Thu 09:51]
        - still needs help finding Rails / Gemfile
 *** TODO start graphql API
      - [X] gem documentation: https://graphql-ruby.org/
-** TODO [2023-07-27 Thu] [/]
+** TODO [2023-07-27 Thu] [0/4]
     - see https://graphql-ruby.org/schema/definition
+*** TODO support ~hello, movies~ query
+     - [X] via Altair
+     - [ ] via RSpec
 *** TODO publish a mutation to add a movie
 *** TODO questions [100%]
      - [X] does any generated code contain ~GraphQL::Schema~
@@ -39,8 +42,7 @@ CLOSED: [2023-07-27 Thu 09:51]
      - [X] what is ~Types::QueryType~
        - [[file:app/graphql/types/query_type.rb::class QueryType < Types::BaseObject]]
      - [ ] how do I test a mutation?
-       
-*** TODO distractions [100%]
+*** TODO distractions [50%]
 **** DONE solargraph
 CLOSED: [2023-07-27 Thu 10:28]
       - [X] install
@@ -49,3 +51,4 @@ CLOSED: [2023-07-27 Thu 10:28]
         - [X] run ~bundle exec solargraph config~
         - [X] add rails plugin
       -  working great!
+**** TODO ~...~ in GraphQL objects (context is testing)

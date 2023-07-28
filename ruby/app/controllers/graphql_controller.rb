@@ -4,7 +4,9 @@ class GraphqlController < ApplicationController
   # If accessing from outside this domain, nullify the session
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
-  # protect_from_forgery with: :null_session
+
+  # TODO: no, not this
+  protect_from_forgery with: :null_session if Rails.env.development?
 
   # rubocop:disable Metrics/MethodLength
   def execute
@@ -53,6 +55,7 @@ class GraphqlController < ApplicationController
     logger.error err.message
     logger.error err.backtrace.join("\n")
 
-    render json: { errors: [{ message: e.message, backtrace: e.backtrace }], data: {} }, status: :internal_server_error
+    render json: { errors: [{ message: err.message, backtrace: err.backtrace }], data: {} },
+           status: :internal_server_error
   end
 end
