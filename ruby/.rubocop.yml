@@ -11,6 +11,9 @@ AllCops:
 Layout/LineLength:
   Max: 120
 
+RSpec/MultipleExpectations:
+  Max: 2
+
 Style/Documentation:
   Enabled: false
 

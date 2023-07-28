@@ -52,3 +52,6 @@ CLOSED: [2023-07-27 Thu 10:28]
         - [X] add rails plugin
       -  working great!
 **** TODO ~...~ in GraphQL objects (context is testing)
+** [2023-07-28 Fri]
+*** TODO XSS protection help from the GraphQL gem?
+
